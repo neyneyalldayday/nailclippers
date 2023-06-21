@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@100&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <section class="weather_dashboard">
+        <section class="search_container">      
+            <h2>Search for a City:</h2>
+            <form id="search">
+                <input id="user_input" data-search="data_search" placeholder="Type here">
+                <p><button id="searchBtn">Search</button></p>
+            </form>
+            <ul id="history"></ul>
+        </section>
+
+        <div id="right_container">
+            <div class="image-wrapper">
+                <img src="./assets/images/clouds2.jpg"/>
+            </div>
+            <div class="right_container_content">
+                <div id="weather_now"></div>
+                <div id="todays-weather-data"></div>
+            </div>          
+            
+        </div>
+        
+    </section>
+    <section class="bottom-section">
+        <h2>5-Day Forecast:</h2>
+        <div id="five_days">
+            
+            <div id="five-day-cards"></div>
+        </div>
+    </section>
+    
+    
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
